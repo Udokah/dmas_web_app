@@ -283,7 +283,7 @@ $app->post('/register', function() use ($app){ /* Update: changed from get to po
             $api_key = $account->generateApiKey() ;
 
             /// Validate email address
-            validateEmail($email);    
+            //validateEmail($email);
 
             // check if user exists
             if($account->userExists($email,$phone)){
