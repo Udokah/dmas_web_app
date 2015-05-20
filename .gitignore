@@ -4,3 +4,5 @@
 /engine/webservice/libs
 error_log
 js/vendor/
+.idea/
+/.idea

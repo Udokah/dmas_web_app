@@ -1,2 +1,2 @@
-# dmas_web_app
+# Divine Mercy Web Application
 Divine Mercy SMS Service web application.
