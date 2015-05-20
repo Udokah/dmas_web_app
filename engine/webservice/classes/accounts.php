@@ -44,14 +44,13 @@ class accounts extends subscription{
      * Log in to account
      * @param String $email
      * @param String $password
-     * @param $device_id String Google Cloud messenger id
      * @return boolean $result true/false
      */
-  public function AuthenticateLogin($email,$password,$device_id){
+  public function AuthenticateLogin($email,$password){
     $select = $this->dbSELECT('apikey,name',"email='".$email."' AND password='".$password."'",$this->accts_table ) ;
     if($select['status'] == true ){
       $return = $select['result'] ;
-      $this->dbUPDATE("device_id='".$device_id."'","email='".$email."'",$this->accts_table);
+      //$this->dbUPDATE("device_id='".$device_id."'","email='".$email."'",$this->accts_table);
     }else{
       $return = false ;
     }

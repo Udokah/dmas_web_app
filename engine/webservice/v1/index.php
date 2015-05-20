@@ -316,7 +316,7 @@ $app->post('/register', function() use ($app){ /* Update: changed from get to po
 $app->post('/login', function() use ($app){
 
            // check for required params
-            verifyRequiredParams(array('email', 'password', 'device_id'));
+            verifyRequiredParams(array('email', 'password'));
             $response = array();
 
             $account = new accounts() ;
@@ -324,10 +324,10 @@ $app->post('/login', function() use ($app){
             // reading post params
             $phone = $account->cleanUP( $app->request->get('email') );
             $password = $account->cleanUP( $app->request->get('password') );
-            $device_id = $account->cleanUP( $app->request->get('device_id') );
+            //$device_id = $account->cleanUP( $app->request->get('device_id') );
 
             // login user
-            $login = $account->AuthenticateLogin($phone,$password,$device_id) ;
+            $login = $account->AuthenticateLogin($phone,$password) ;
 
             if($login == false){
                 $response["error"] = true ;
