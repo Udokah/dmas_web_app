@@ -125,11 +125,11 @@ function authenticate(\Slim\Route $route) {
     $app = \Slim\Slim::getInstance();
  
     // Verifying Authorization Header
-    if (isset($headers['AUTHORIZATION'])) {
+    if (isset($headers['Authorization'])) {
         $account = new accounts() ;
  
         // get the api key
-        $api_key = $headers['AUTHORIZATION'];
+        $api_key = $headers['Authorization'];
         // validating api key
         if (!$account->isValidApiKey($api_key)) {
             // api key is not present in users table
@@ -145,7 +145,7 @@ function authenticate(\Slim\Route $route) {
     } else {
         // api key is missing in header
         $response["error"] = true;
-        $response["message"] = "Api key is misssing";
+        $response["message"] = "Api key is missing";
         echoRespnse(200, $response);
         $app->stop();
     }
