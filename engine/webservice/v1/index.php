@@ -268,7 +268,7 @@ $app->get('/subscription', 'authenticate', function() use ($app){
 $app->post('/register', function() use ($app){ /* Update: changed from get to post added new param deviceID*/
 
            // check for required params
-            verifyRequiredParams(array('name', 'email', 'phone', 'password' , 'country' , 'device_id'));
+            verifyRequiredParams(array('name', 'email', 'phone', 'password' , 'country'));
             $response = array();
 
             $account = new accounts() ;
@@ -279,7 +279,7 @@ $app->post('/register', function() use ($app){ /* Update: changed from get to po
             $email = $account->cleanUP( $app->request->get('email') );
             $password = $account->cleanUP( $app->request->get('password') );
             $country = $account->cleanUP( $app->request->get('country') );
-            $device_id = $account->cleanUP( $app->request->get('device_id') );
+            //$device_id = $account->cleanUP( $app->request->get('device_id') );
             $api_key = $account->generateApiKey() ;
 
             /// Validate email address
@@ -291,7 +291,7 @@ $app->post('/register', function() use ($app){ /* Update: changed from get to po
                 $response["message"] = "this email or phone number has been used.";
                 echoRespnse(200, $response);
             }else{
-              $create = $account->createAccount($name,$email,$phone,$password,$country,$api_key,$device_id) ;
+              $create = $account->createAccount($name,$email,$phone,$password,$country,$api_key) ;
               if( $create['status'] == true ){  //create account
                    $response["error"] = false ;
                    $response["message"] = $api_key ;

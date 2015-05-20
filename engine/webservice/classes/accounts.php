@@ -32,10 +32,10 @@ class accounts extends subscription{
      * @param $device_id
      * @return boolean $result true/false
      */
-  public function createAccount($name,$email,$phone,$password,$country,$apiKey,$device_id){
+  public function createAccount($name,$email,$phone,$password,$country,$apiKey){
     $set = "name='".$name."', email='".$email."', phone='".$phone.
            "', password='".$password."', country='".$country.
-           "', apikey='".$apiKey."', device_id='".$device_id."'" ;
+           "', apikey='".$apiKey."'" ;
     $insert = $this->dbINSERT($set,$this->accts_table) ;
     return $insert ;
   }
