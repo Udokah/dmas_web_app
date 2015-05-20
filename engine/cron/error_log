@@ -1,0 +1,104 @@
+[27-Jan-2014 10:07:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[27-Jan-2014 10:08:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[27-Jan-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[28-Jan-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[29-Jan-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[30-Jan-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[31-Jan-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[01-Feb-2014 21:57:02 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[02-Feb-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[03-Feb-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[04-Feb-2014 21:57:01 Africa/Lagos] PHP Fatal error:  Class 'cron' not found in /home/dmasnigc/public_html/engine/cron/cron.daily.php on line 16
+[05-Feb-2014 21:57:02 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[06-Feb-2014 21:57:02 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[07-Feb-2014 21:57:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[08-Feb-2014 21:57:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[09-Feb-2014 21:57:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[10-Feb-2014 21:57:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[11-Feb-2014 21:57:01 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 8
+[30-Jun-2014 13:10:03 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/dmasnigc/public_html/engine/class/class.database.php on line 13
+[01-Jul-2014 13:12:28 Africa/Lagos] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (111) in /home/dmasnigc/public_html/engine/class/class.database.php on line 13
+[14-Aug-2014 14:55:09 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(88): sms::SendSMS('2348135143089', 'Sent: The praye...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.daily.php(17): cron->SendDailySMS()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[10-Oct-2014 14:56:19 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(91): sms::SendSMS('2348147725379', 'Behold, the tre...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.daily.php(17): cron->SendDailySMS()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[21-Dec-2014 08:11:18 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(37): sms::SendSMS('2348033604934', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[14-Jan-2015 08:11:12 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(37): sms::SendSMS('2349098709151', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[18-Jan-2015 22:56:02 Africa/Lagos] PHP Warning:  include_once(../class/class.MySQLi.php): failed to open stream: No such file or directory in /home/dmasnigc/public_html/engine/cron/cron.delete_expired_subscribers.php on line 3
+[18-Jan-2015 22:56:02 Africa/Lagos] PHP Warning:  include_once(): Failed opening '../class/class.MySQLi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/dmasnigc/public_html/engine/cron/cron.delete_expired_subscribers.php on line 3
+[18-Jan-2015 22:56:02 Africa/Lagos] PHP Fatal error:  Class 'MySQLi' not found in /home/dmasnigc/public_html/engine/class/class.database.php on line 4
+[20-Jan-2015 13:10:04 Africa/Lagos] PHP Warning:  include_once(../class/class.MySQLi.php): failed to open stream: No such file or directory in /home/dmasnigc/public_html/engine/cron/cron.check_message_limit.php on line 4
+[20-Jan-2015 13:10:04 Africa/Lagos] PHP Warning:  include_once(): Failed opening '../class/class.MySQLi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/dmasnigc/public_html/engine/cron/cron.check_message_limit.php on line 4
+[20-Jan-2015 13:10:04 Africa/Lagos] PHP Fatal error:  Class 'MySQLi' not found in /home/dmasnigc/public_html/engine/class/class.database.php on line 4
+[20-Jan-2015 14:55:11 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(88): sms::SendSMS('2348135143089', 'Sent: If you he...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.daily.php(17): cron->SendDailySMS()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[24-Jan-2015 08:11:11 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(42): sms::SendSMS('2348061398517', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[27-Jan-2015 08:11:10 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(37): sms::SendSMS('2348035520632', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[25-Feb-2015 08:11:08 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(37): sms::SendSMS('2348187298301', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[26-Feb-2015 08:11:07 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(37): sms::SendSMS('2348030524135', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[07-Mar-2015 08:11:19 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(37): sms::SendSMS('2348068294012', 'Your Subscripti...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.expiry_warning.php(13): cron->expiry_warning()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[09-Mar-2015 14:55:08 Africa/Lagos] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/dmasnigc/public_html/engine/class/class.sms.php:98
+Stack trace:
+#0 /home/dmasnigc/public_html/engine/class/class.sms.php(98): SimpleXMLElement->__construct('')
+#1 /home/dmasnigc/public_html/engine/class/class.cron.php(88): sms::SendSMS('2348135143089', 'Sent: You shoul...')
+#2 /home/dmasnigc/public_html/engine/cron/cron.daily.php(17): cron->SendDailySMS()
+#3 {main}
+  thrown in /home/dmasnigc/public_html/engine/class/class.sms.php on line 98
+[27-Apr-2015 14:56:47 Africa/Lagos] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/dmasnigc/public_html/engine/class/class.database.php on line 13
