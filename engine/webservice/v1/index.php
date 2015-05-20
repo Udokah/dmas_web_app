@@ -198,7 +198,7 @@ $app->get('/daily', 'authenticate', function() use ($app) {
  * method - POST
  * @return String $message contains xml data of subcription info ;
  */
-$app->put('/subscribe', 'authenticate', function() use ($app) {
+$app->post('/subscribe', 'authenticate', function() use ($app) {
 
   $response = array();
   $account = new accounts() ;
@@ -207,9 +207,10 @@ $app->put('/subscribe', 'authenticate', function() use ($app) {
   $response["error"] = true ;
 
   $phone = $account->getUserPhone($user_id) ;
-  $pincode = $headers['PINCODE'] ;
+  $pincode = $headers['Pincode'] ;
   $account->pincode = $pincode ;
   $account->phone = $phone ;
+
 
      // check if pincode is valid
   if($account->ValidatePinCode()){
