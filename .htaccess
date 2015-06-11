@@ -228,6 +228,7 @@ AddDefaultCharset utf-8
     RewriteRule ^download/?$ download.php [NC,L]
     RewriteRule ^tickers/?$ tickers.php [NC,L]
     RewriteRule ^gallery/?$ gallery.php [NC,L]
+    RewriteRule ^subscribe-online/?$ subscribe.php [NC,L]
 </IfModule>
 
 # ------------------------------------------------------------------------------

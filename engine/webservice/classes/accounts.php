@@ -57,6 +57,19 @@ class accounts extends subscription{
     return $return ;
   }
 
+
+    /**
+     * Fetch users data using apiKey
+     * @param Array $cols
+     * @param String $api_key
+     * @return array
+     */
+  public function getAccount($cols,$api_key){
+      $key = $this->cleanUP($api_key);
+      $select = $this->dbSELECT(implode(',',$cols), "apikey='$key'", $this->accts_table);
+      return $select;
+  }
+
   /**
     * Get account details with key
     * @param Array $dataToGet  
