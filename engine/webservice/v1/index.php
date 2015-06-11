@@ -174,20 +174,15 @@ $app->get('/daily', 'authenticate', function() use ($app) {
   $response["error"] = true ;
 
   // check if user is active
-  $phone = $account->getUserPhone($user_id) ;
-  $subscriptionArray = $account->getSubscriptionData($phone) ;
+  //$phone = $account->getUserPhone($user_id) ;
+  //$subscriptionArray = $account->getSubscriptionData($phone) ;
 
-  if($subscriptionArray['status'] == 'Active'){// send message
-  	// Get message for today
-  	$cron->ChooseRandomSMS() ;
-  	$response["error"] = false ;
-  	$response["message"] = onlyAlphNumeric($cron->message) ;
-  	echoRespnse(202, $response);
-  }else{
-  	$response["error"] = true ;
-  	$response["message"] ='account is not active' ;
-  	echoRespnse(200, $response);
-  }  
+    // Get message for today
+    $cron->ChooseRandomSMS() ;
+    $response["error"] = false ;
+    $response["message"] = onlyAlphNumeric($cron->message) ;
+    echoRespnse(202, $response);
+
 });
 
 
